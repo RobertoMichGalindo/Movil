@@ -58,8 +58,14 @@
             <div class="collapse" id="invoice-one" data-bs-parent="#invoice-accordion">
                 <div class="card card-style">
                     <div class="content">
-
+                        <div class="col-12 text-end mb-2">
+                            <span class="">Visualizar PDF</span>
+                            <a href="#" class="btn btn-light px-2 py-1 ms-2 rounded" data-bs-toggle="modal" data-bs-target="#modalPDF" title="Ver PDF">
+                                <i class="fa-solid fa-magnifying-glass fa-xs"></i>
+                            </a>
+                        </div>
                         <div class="row mb-3 mt-4">
+                            
                             <h5 class="col-4 text-start font-15">Estatus</h5>
                             <h5 class="col-8 text-end font-14 opacity-60 font-400">Autorizada</h5>
                             <h5 class="col-4 text-start font-15">Período</h5>
@@ -644,6 +650,32 @@
     </div>
     <!-- End of Page Content-->
     <!-- All Menus, Action Sheets, Modals, Notifications, Toasts, Snackbars get Placed outside the <div class="page-content"> -->
+    <div class="modal fade" id="modalPDF" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen-sm-down modal-xl modal-dialog-centered">
+            <div class="modal-content h-100">
+
+                <div class="modal-header py-2">
+                    <h6 class="modal-title mb-0">Vista previa del documento</h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body p-0 h-100">
+                    <iframe
+                        src="O-22541.pdf"
+                        width="100%"
+                        height="100%"
+                        style="border: none;"
+                        loading="lazy">
+                    </iframe>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
     <div id="menu-settings" class="menu menu-box-bottom menu-box-detached">
         <div class="menu-title mt-0 pt-0"><h1>Settings</h1><p class="color-highlight">Flexible and Easy to Use</p><a href="#" class="close-menu"><i class="fa fa-times"></i></a></div>
         <div class="divider divider-margins mb-n2"></div>
